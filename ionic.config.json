@@ -1,0 +1,7 @@
+{
+  "name": "tern",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

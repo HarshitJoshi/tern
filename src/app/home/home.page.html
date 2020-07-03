@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true">
+  <div class="logo">
+    <img src="../assets/img/logo_tern.png" />
+  </div>
+
+  <div class="center">
+    <h2>Welcome Back!</h2>
+    <ion-item transparent>
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-input
+        color="light"
+        placeholder="Email"
+        type="email"
+        [(ngModel)]="email"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item transparent>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input
+      color="light"
+        placeholder="Password"
+        type="password"
+        [(ngModel)]="password"
+      ></ion-input>
+    </ion-item>
+
+    <div linespace></div>
+
+    <ion-button
+      color="primary"
+      fill="solid"
+      size="large"
+      expand="block"
+      (click)="login()"
+      >Sign In</ion-button
+    >
+
+    <ion-item lines="none">
+      <ion-button class="ion-button-center" color="light" fill="clear" 
+        >Forgot username or password?</ion-button
+      >
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label class="ion-text-center" color="light"
+        >Don't have an account yet?
+        <span class="link" routerLink="/signup" routerDirection="root">Sign up</span>
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>

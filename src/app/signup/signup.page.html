@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="logo">
+    <img src="../assets/img/logo_tern.png" />
+  </div>
+
+  <div class="center">
+    <h2>Create an Account</h2>
+    <ion-item transparent>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-input color="light" [(ngModel)]="fullname" placeholder="Full Name"></ion-input>
+    </ion-item>
+
+    <ion-item transparent>
+      <ion-icon name="mail-sharp"></ion-icon>
+      <ion-input color="light" placeholder="Email" [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item transparent>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input
+        color="light"
+        placeholder="Password"
+        type="password"
+        [(ngModel)]="password"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item transparent>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input
+        color="light"
+        placeholder="Confirm Password"
+        type="password"
+        [(ngModel)]="cpassword"
+      ></ion-input>
+    </ion-item>
+    <div linespace></div>
+
+    <ion-button
+      color="primary"
+      fill="solid"
+      size="large"
+      expand="block"
+      (click)="register()"
+      >Sign Up</ion-button
+    >
+    <div linespace></div>
+
+    <ion-item lines="none">
+      <ion-label class="ion-text-center" color="light"
+        >Already have an account?
+        <span class="link" routerLink="/home" routerDirection="root"
+          >Login</span
+        >
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>
