@@ -23,6 +23,6 @@ export class SignupPage implements OnInit {
     const { fullname, email, password } = this;
     return this.http.post(`${this.uri}/register`, { fullname, email, password }).subscribe((result) => {
       console.log(result);
-    }), err => console.error(' I wass here', err);
+    }), err => console.error(err);
   }
 }
